@@ -1,4 +1,4 @@
-package com.example.basedemo;
+package com.example.basis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
