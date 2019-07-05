@@ -11,7 +11,7 @@ spring:
       filters: stat
       driver-class-name: com.mysql.cj.jdbc.Driver
       #基本属性
-      url: jdbc:mysql://106.15.120.208/demodb?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      url: jdbc:mysql://106.15.120.208/demo?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
       username: root
       password: root
       #配置初始化大小/最小/最大
