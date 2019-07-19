@@ -1,6 +1,6 @@
 package com.example.basis.shiro;
 
-import com.example.basis.butterfly.service.UserService;
+import com.example.basis.butterfly.service.ShiroService;
 import com.example.basis.common.entity.ManagerInfo;
 import com.example.basis.common.entity.Permission;
 import com.example.basis.common.entity.SysRole;
@@ -28,7 +28,7 @@ public class MyShiroRealm extends AuthorizingRealm {
     private static final Logger _logger = LoggerFactory.getLogger(MyShiroRealm.class);
 
     @Autowired
-    UserService managerInfoService;
+    ShiroService shiroService;
 
     /**
      * 认证信息.(身份验证)
@@ -50,7 +50,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 
         //通过username从数据库中查找 ManagerInfo对象
         //实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法
-        ManagerInfo managerInfo = managerInfoService.findByUsername(username);
+        ManagerInfo managerInfo = shiroService.findByUsername(username);
 
         if (managerInfo == null) {
             return null;

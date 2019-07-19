@@ -31,8 +31,6 @@ import java.util.Map;
 public class LoginController {
 
     @Resource
-    private UserService managerInfoService;
-    @Resource
     private MyProperties myProperties;
 
     private static final Logger _logger = LoggerFactory.getLogger(LoginController.class);

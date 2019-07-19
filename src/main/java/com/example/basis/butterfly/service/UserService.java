@@ -8,5 +8,4 @@ public interface UserService {
 
     PageInfo<UserDO> selectUsers(int pageNum, int pageSize);
 
-    ManagerInfo findByUsername(String userName) ;
 }
