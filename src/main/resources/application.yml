@@ -2,6 +2,12 @@ server:
   port: 8086
 
 spring:
+  thymeleaf:
+    mode: HTML
+    cache: false
+    mvc:
+      view:
+        prefix: /templates
   datasource:
     name: mysql_test
     type: com.alibaba.druid.pool.DruidDataSource
