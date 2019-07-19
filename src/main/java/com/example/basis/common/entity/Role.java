@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * 角色表
  *
- * @author 熊能
+ * @author benben
  * @version 1.0
  * @since 2018/01/02
  */

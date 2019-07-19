@@ -6,13 +6,13 @@ import java.util.Date;
 /**
  * 权限表
  *
- * @author 熊能
+ * @author benben
  * @version 1.0
  * @since 2018/01/02
  */
 public class Permission {
 
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
