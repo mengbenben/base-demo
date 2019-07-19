@@ -3,6 +3,7 @@ package com.example.basis.butterfly.service.impl;
 import com.example.basis.butterfly.service.UserService;
 import com.example.basis.butterfly.dao.UserDao;
 import com.example.basis.butterfly.model.user.UserDO;
+import com.example.basis.common.entity.ManagerInfo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,10 @@ public class UserServiceImpl implements UserService {
         List<UserDO> userDOs = userDao.selectUsers();
         PageInfo result = new PageInfo(userDOs);
         return result;
+    }
+
+    @Override
+    public ManagerInfo findByUsername(String userName) {
+        return userDao.findByUsername(userName);
     }
 }
